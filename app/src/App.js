@@ -10,13 +10,17 @@ import Workouts from './components/Workouts';
 
 
 
-import octofitLogo from './octofitapp-small.png';
+
+
+import octofitLogo from './octofit-logo.png';
+import runningPeopleLogo from './octofit-logo.png';
 
 function App() {
   return (
     <Router>
       <div className="container mt-4">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4 d-flex align-items-center">
+          <img src={runningPeopleLogo} alt="Running People Logo" style={{height: '48px', marginRight: '18px', borderRadius: '12px', background: '#fff', padding: '4px', boxShadow: '0 2px 8px rgba(58,134,255,0.12)'}} />
           <NavLink className="navbar-brand fw-bold d-flex align-items-center" to="/">
             <img src={octofitLogo} alt="Octofit Logo" className="octofit-logo me-2" />
             Octofit Tracker
